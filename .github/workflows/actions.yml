@@ -12,6 +12,8 @@ jobs:
         - run: python hello.py
         - name: push and commit
           run: |
+            git config --global user.email "gelargew@gmail.com"
+            git config --global user.name "Gelar Rustiawan"
             git add -A
             git commit -m "pushing"
             git push
