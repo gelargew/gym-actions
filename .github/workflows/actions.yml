@@ -15,3 +15,12 @@ jobs:
           run: |
             ls ${{ github.workspace }}
         - run: echo "🍏 This job's status is ${{ job.status }}."
+  Hello-Pyton:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+        - uses: actions/setup-python@v2
+        - run: echo "installing python..."
+          with:
+          - python-version: '3.10'
+        - run: python hello.py
