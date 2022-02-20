@@ -1,5 +1,4 @@
 name: 'actions'
-description: 'trying out github action'
 on: [push]
 jobs:
   check-bats-version:
