@@ -21,6 +21,7 @@ jobs:
             git config --global user.email "gelargew@gmail.com"
             git config --global user.name "bot"
             git add -A
-            git commit -m "update data"
-            git push
+            git commit -m "branch"
+            git checkout release
+            git merge main
             echo”::set-output name=date::$(date+'%Y/%m/%d' -d "3 days")”
