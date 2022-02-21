@@ -23,7 +23,7 @@ jobs:
             git config --global pull.rebase true
             git add -A
             git commit -m "branch"
-            git pull origin release
-            git checkout release
+            git pull origin a2
+            git checkout a2
             git merge main 
-            git push --set-upstream origin release
+            git push --set-upstream origin a2
