@@ -25,4 +25,4 @@ jobs:
             git branch release
             git checkout release
             git merge main
-            git push
+            git push --set-upstream origin release
