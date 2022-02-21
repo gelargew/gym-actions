@@ -2,7 +2,7 @@ name: 'actions'
 on:
   push:
     branches:
-      -'main'
+      - 'main'
 jobs:
   Hello-Pyton:
       runs-on: ubuntu-latest
