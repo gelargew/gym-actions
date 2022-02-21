@@ -25,4 +25,4 @@ jobs:
             git branch release
             git checkout release
             git merge main
-            git push release
+            git push
