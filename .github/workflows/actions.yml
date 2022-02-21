@@ -13,7 +13,10 @@ jobs:
         - name: push and commit
           run: |
             git config --global user.email "gelargew@gmail.com"
-            git config --global user.name "Gelar Rustiawan"
+            git config --global user.name "bot"
             git add -A
-            git commit -m "pushing"
+            git reset .github/
+            git commit -m "branch"
+            git checkout release
             git push
+            echo”::set-output name=date::$(date+'%Y/%m/%d' -d "3 days")”
