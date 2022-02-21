@@ -22,6 +22,7 @@ jobs:
             git config --global user.name "bot"
             git add -A
             git commit -m "branch"
+            git branch release
             git checkout release
             git merge main
             echo”::set-output name=date::$(date+'%Y/%m/%d' -d "3 days")”
